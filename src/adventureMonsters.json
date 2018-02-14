@@ -1,0 +1,122 @@
+[
+  {
+    "startingRoom": "Basement",
+    "endingRoom": "EndRoom",
+    "rooms": [
+      {
+        "name": "Basement",
+        "description": "It's kinda smelly down here...",
+        "directions": [
+          {
+            "directionName": "Down",
+            "room": "Lower Basement"
+          }
+        ],
+        "items": ["old rag", "spiderweb", "broom"],
+        "monstersInRoom": ["Boris"]
+      },
+      {
+        "name": "Lower Basement",
+        "description": "It's getting harder to see...",
+        "directions": [
+          {
+            "directionName": "through the Door",
+            "room": "DoorRoom"
+          },
+          {
+            "directionName": "Deeper",
+            "room": "Catacombs"
+          }
+        ],
+        "items": ["strange fluid", "key"],
+        "monstersInRoom": ["Boris", "Vlad"]
+      },
+      {
+        "name": "DoorRoom",
+        "description": "You went through the door.",
+        "directions": [
+          {
+            "directionName": "back",
+            "room": "Lower Basement"
+          }
+        ],
+        "items": ["pizza", "key to life"],
+        "monstersInRoom": ""
+      },
+      {
+        "name": "Catacombs",
+        "description": "It's pitch black. You hear something dripping in the distance.",
+        "directions": [
+          {
+            "directionName": "Deeper",
+            "room": "Depths"
+          },
+          {
+            "directionName": "Left",
+            "room": "Catacombs 2"
+          }
+        ],
+        "items": ["The Bible", "Scissors"],
+        "monstersInRoom": ["Vlad", "Boris", "Greg"]
+      },
+      {
+        "name": "Catacombs 2",
+        "description": "You see a large hole in front of you. The bottom is nowhere to be seen.",
+        "items": ["Chocolate Milk", "Torn Photo"],
+        "directions": [
+          {
+            "directionName": "back",
+            "room": "Catacombs"
+          }
+        ]
+      },
+      {
+        "name": "Depths",
+        "description": "There is a skull in the corner.",
+        "directions": [
+          {
+            "directionName": "Deeper",
+            "room": "EndRoom"
+          }
+        ],
+        "items": ["nothing"],
+        "monstersInRoom": ["Greg", "Michael"]
+      },
+      {
+        "name": "EndRoom",
+        "description": "You reached the end!",
+        "directions": [],
+        "items": ["Strawberry Milk"],
+        "monstersInRoom":[]
+      }
+    ],
+    "player": "Peter Zukerman",
+    "monsters": [
+      {
+        "name": "Greg",
+        "attack": 15,
+        "defense": 20,
+        "health": 50
+      },
+      {
+        "name": "Michael",
+        "attack": 25,
+        "defense": 5,
+        "health": 30
+      },
+      {
+        "name": "Vlad",
+        "attack": 15,
+        "defense": 40,
+        "health": 20
+      },
+      {
+        "name": "Boris",
+        "attack": 10,
+        "defense": 10,
+        "health": 15
+      }
+    ]
+
+  }
+]
